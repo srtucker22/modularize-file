@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.8.2
+3 info using node@v5.7.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/simontucker/Documents/modularize-file',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/simontucker/.npm/@srtucker22/modularize-file/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/simontucker/.npm correctMkdir not in flight; initializing
+10 info lifecycle @srtucker22/modularize-file@1.0.0~prepublish: @srtucker22/modularize-file@1.0.0
+11 silly lifecycle @srtucker22/modularize-file@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/simontucker/.npm/@srtucker22/modularize-file/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/simontucker/Documents/modularize-file' ]
+13 verbose tarball /Users/simontucker/.npm/@srtucker22/modularize-file/1.0.0/package.tgz
+14 verbose folder /Users/simontucker/Documents/modularize-file
+15 verbose addLocalTarball adding from inside cache /Users/simontucker/.npm/@srtucker22/modularize-file/1.0.0/package.tgz
+16 verbose correctMkdir /Users/simontucker/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @srtucker22/modularize-file@1.0.0
+18 verbose afterAdd /Users/simontucker/.npm/@srtucker22/modularize-file/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/simontucker/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/simontucker/.npm/@srtucker22/modularize-file/1.0.0/package/package.json written
+21 silly publish { name: '@srtucker22/modularize-file',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   bin: { 'modularize-file': './index.js' },
+21 silly publish   dependencies: { commander: '^2.9.0', fs: '0.0.2', 'mock-browser': '^0.92.11' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: '@srtucker22/modularize-file@1.0.0',
+21 silly publish   _shasum: 'd0447fae30c308f3a2398afcd214cabed40095cf',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @srtucker22/modularize-file
+24 silly mapToRegistry scope (from package name) @srtucker22
+25 verbose mapToRegistry no registry URL found in name for scope @srtucker22
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/@srtucker22%2fmodularize-file
+29 verbose publish registryBase https://registry.npmjs.org/
+30 silly publish uploading /Users/simontucker/.npm/@srtucker22/modularize-file/1.0.0/package.tgz
+31 verbose request uri https://registry.npmjs.org/@srtucker22%2fmodularize-file
+32 verbose request sending authorization for write operation
+33 info attempt registry request try #1 at 7:35:37 PM
+34 verbose request using bearer token for auth
+35 verbose request id afb1f1bc5e3c4fae
+36 http request PUT https://registry.npmjs.org/@srtucker22%2fmodularize-file
+37 http 402 https://registry.npmjs.org/@srtucker22%2fmodularize-file
+38 verbose headers { 'content-type': 'application/json',
+38 verbose headers   'cache-control': 'max-age=0',
+38 verbose headers   'content-length': '119',
+38 verbose headers   'accept-ranges': 'bytes',
+38 verbose headers   date: 'Wed, 23 Mar 2016 02:35:37 GMT',
+38 verbose headers   via: '1.1 varnish',
+38 verbose headers   connection: 'keep-alive',
+38 verbose headers   'x-served-by': 'cache-sjc3122-SJC',
+38 verbose headers   'x-cache': 'MISS',
+38 verbose headers   'x-cache-hits': '0',
+38 verbose headers   'x-timer': 'S1458700537.400559,VS0,VE194' }
+39 verbose request invalidating /Users/simontucker/.npm/registry.npmjs.org/_40srtucker22_252fmodularize-file on PUT
+40 error publish Failed PUT 402
+41 verbose stack Error: You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @srtucker22/modularize-file
+41 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+41 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+41 verbose stack     at emitTwo (events.js:100:13)
+41 verbose stack     at Request.emit (events.js:185:7)
+41 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+41 verbose stack     at emitOne (events.js:95:20)
+41 verbose stack     at Request.emit (events.js:182:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+42 verbose statusCode 402
+43 verbose pkgid @srtucker22/modularize-file
+44 verbose cwd /Users/simontucker/Documents/modularize-file
+45 error Darwin 15.3.0
+46 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+47 error node v5.7.1
+48 error npm  v3.8.2
+49 error code E402
+50 error You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @srtucker22/modularize-file
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]

@@ -1,0 +1,19 @@
+{
+  "name": "@srtucker22/modularize-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "modularize-file": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "fs": "0.0.2",
+    "mock-browser": "^0.92.11"
+  }
+}
