@@ -13,7 +13,8 @@ function convert(input_file, output_file) {
       	'var START_FROM_THIS_OBJECT;';
       fileToParse += fs.readFileSync(input_file, 'utf8');
 
-      var interpretFile = fs.readFileSync('interpret.js', 'utf8');
+      console.log(__dirname + 'interpret.js');
+      var interpretFile = fs.readFileSync(__dirname + '/interpret.js', 'utf8');
       fileToParse += ';var END_TO_THIS_OBJECT;';
 
       var script = fileToParse + interpretFile;
